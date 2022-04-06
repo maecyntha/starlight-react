@@ -1,0 +1,35 @@
+#top {
+	height: 85px;
+}
+
+#top form {
+    width: 50%;
+}
+
+img.duck {
+	width: 55px;
+	cursor: pointer;
+}
+
+.profile img{
+	width: 25px;
+}
+
+.profile img, .profile div {
+	cursor: pointer;
+}
+
+img.duck-prof {
+	width: 45px;
+}
+
+#top input {
+	background-color: rgb(245, 239, 239);
+	border-radius: 12px;
+    min-width: 100%;
+	outline: none;
+}
+
+#top input::placeholder {
+	color: rgb(172, 175, 175);
+}
