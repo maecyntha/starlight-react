@@ -1,6 +1,6 @@
 import React from "react";
-import Top from './components/top';
 import Content from './components/content'
+import Top from './components/top'
 
 function FlexboxPage () {
 	return (
