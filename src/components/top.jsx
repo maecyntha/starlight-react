@@ -1,8 +1,45 @@
+import React from 'react';
 import { Input, Flex, Box, Image } from '@chakra-ui/react';
 
 import duck from '../pict/duck.jpg';
 import car from '../pict/car.svg';
 import ig from '../pict/ig.svg';
+
+function Account() {
+    return (
+        <Flex 
+            alignItems='center' 
+            _hover={{ backgroundColor: 'brand.200'}} 
+            height='50px' 
+            borderRadius={5} 
+            justifyContent='center'
+        >
+            <Box py='3' width='60px'>
+                <Image 
+                    src={duck} alt=''
+                    cursor='pointer'
+                    borderRadius='full'
+                    p={3}
+                />
+            </Box>
+            <Box pr={3} cursor='pointer'>Mae</Box>
+        </Flex>
+    )
+}
+
+// function Icon(props) {
+//     return (
+//         <Box width='50px' mr={{ base: '0', md: '5' }} >
+//             <Image 
+//                 src={props.src} alt=''
+//                 cursor='pointer'
+//                 borderRadius={3}
+//                 _hover={{ backgroundColor: 'brand.200'}}
+//                 p={3}
+//             />
+//         </Box>
+//     );
+// }
 
 function Other() {
     return (
@@ -16,6 +53,9 @@ function Other() {
                     p={3}
                 />
             </Box>
+
+            {/* <Icon src="{car}" /> */}
+
             <Box width='50px' mr={{ base: '0', md: '5' }} >
                 <Image 
                     src={ig} alt=''
@@ -25,23 +65,7 @@ function Other() {
                     p={3}
                 />
             </Box>
-            <Flex 
-                alignItems='center' 
-                _hover={{ backgroundColor: 'brand.200'}} 
-                height='50px' 
-                borderRadius={5} 
-                justifyContent='center'
-            >
-                <Box py='3' width='60px'>
-                    <Image 
-                        src={duck} alt=''
-                        cursor='pointer'
-                        borderRadius='full'
-                        p={3}
-                    />
-                </Box>
-                <Box pr={3} cursor='pointer'>Mae</Box>
-            </Flex>
+            <Account />
         </Flex>
     )
 }
