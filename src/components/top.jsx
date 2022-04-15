@@ -31,7 +31,7 @@ function Account() {
 //     return (
 //         <Box width='50px' mr={{ base: '0', md: '5' }} >
 //             <Image 
-//                 src={props.src} alt=''
+//                 src={props.img} alt=''
 //                 cursor='pointer'
 //                 borderRadius={3}
 //                 _hover={{ backgroundColor: 'brand.200'}}
@@ -54,7 +54,7 @@ function Other() {
                 />
             </Box>
 
-            {/* <Icon src="{car}" /> */}
+            {/* <Icon img="{car}" /> */}
 
             <Box width='50px' mr={{ base: '0', md: '5' }} >
                 <Image 
