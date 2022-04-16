@@ -1,16 +1,22 @@
 import { Divider, Flex, Box, Image, Text, ListItem, UnorderedList } from '@chakra-ui/react';
 
-import char1 from '../pict/winnie.webp';
-import char2 from '../pict/tigger.webp';
-import char3 from '../pict/piglet.webp';
-import char4 from '../pict/eeyore.webp';
-import char5 from '../pict/roo.webp';
-import char6 from '../pict/cr.webp';
+function Pict(props) {
+    return (
+        <Image 
+            src={props.url} 
+            rounded='full' 
+            mr={1}
+            maxH={{base:'40px', md:'25px'}}
+        >
+        </Image>
+    )
+}
 
 function left() {
     return(
         <Box 
             width={{base:'100%', md:'55%'}}
+            mb={{base:'8', md:'0'}}
             padding={5}
             rounded={4}
             bg='brand.100'
@@ -53,31 +59,11 @@ function left() {
                 <Flex
                     justifyContent={{base:'flex-start', md:'flex-end'}}
                     mt={{base:'2', md:'0'}}
-                >  
-                    <Image 
-                        src={char1} 
-                        rounded='full' 
-                        mr={1}
-                        width={{base:'40px', md:'25px'}}
-                    />
-                    <Image 
-                        src={char2} 
-                        rounded='full' 
-                        mr={1}
-                        width={{base:'40px', md:'25px'}}
-                    />
-                    <Image 
-                        src={char3} 
-                        rounded='full' 
-                        mr={1}
-                        width={{base:'40px', md:'25px'}}
-                    />
-                    <Image 
-                        src={char4} 
-                        rounded='full' 
-                        mr={1}
-                        width={{base:'40px', md:'25px'}}
-                    />
+                >
+                    <Pict url='https://lumiere-a.akamaihd.net/v1/images/c94eed56a5e84479a2939c9172434567c0147d4f.jpeg'/>
+                    <Pict url='https://lumiere-a.akamaihd.net/v1/images/d97be3597bae8541c4de53aa8741d30b34b76dac.jpeg'/>
+                    <Pict url='https://lumiere-a.akamaihd.net/v1/images/9e259a68c3fceb6265860399bfc98fb56e098960.jpeg'/>
+                    <Pict url='https://lumiere-a.akamaihd.net/v1/images/open-uri20150422-20810-11ej849_779819a7.jpeg'/>
                 </Flex>
             </Flex>
         </Box>
