@@ -1,9 +1,9 @@
-import { Input, Flex, Box, Image, Text, Link, Button } from '@chakra-ui/react';
+import { Flex, Box, Image, Text, Button } from '@chakra-ui/react';
 
 function RightTemp(props) {
     return (
         <Box 
-            mb={{base:'8', md:'0'}}
+            mb={8}
             padding={5}
             rounded={4}
             bg='brand.100'
@@ -53,7 +53,7 @@ function right() {
                 date="Mar 25, 2021"
                 rate="9.6"
             />
-            <Box textAlign='center' mt={5} color='brand.400'>
+            <Box textAlign='center' color='brand.400'>
                 <Button href="#">
                     Read More
                 </Button>

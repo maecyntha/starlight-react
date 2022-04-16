@@ -1,4 +1,4 @@
-import { Flex, Link, Text, Box } from '@chakra-ui/react';
+import { Flex, Link, Text } from '@chakra-ui/react';
 
 function Nav(props) {
     return (
@@ -30,7 +30,7 @@ function SideNav() {
             <Nav name="Tool" />
 
             <Text display={{base:'none', md:'block'}} color="brand.100" fontSize="xs" w="full" mt='auto' textAlign="center">&copy;2022 by<br />Maecyntha Irelynn Tantra</Text>
-            <Text display={{base:'none', md:'block'}} color="brand.100" fontSize="xs" w="full" mb={5} align="center">All Rights Reserved</Text>
+            <Text display={{base:'none', md:'block'}} color="brand.100" fontSize="xs" w="full" mb={5} textAlign="center">All Rights Reserved</Text>
         </Flex>
     )
 }

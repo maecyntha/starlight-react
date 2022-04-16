@@ -30,14 +30,14 @@ function Account() {
 // function Icon(props) {
 //     return (
 //         <Box width='50px' mr={{ base: '0', md: '5' }} >
-//             <Image 
-//                 src={props.img} alt=''
-//                 cursor='pointer'
-//                 borderRadius={3}
-//                 _hover={{ backgroundColor: 'brand.200'}}
-//                 p={3}
-//             />
-//         </Box>
+//                 <Image 
+//                     src={props.logo} alt=''
+//                     cursor='pointer'
+//                     borderRadius={3}
+//                     _hover={{ backgroundColor: 'brand.200'}}
+//                     p={3}
+//                 />
+//             </Box>
 //     );
 // }
 
