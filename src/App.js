@@ -46,7 +46,7 @@ function App() {
       <ToSibling />
 
       <br /><br />
-      <h2>useState (test)</h2><br />
+      <h2>useState</h2><br />
       <LessText 
         text = {`Focused, hard work is the real key to success.
                 Keep your eyes on the goal, and just keep taking 
