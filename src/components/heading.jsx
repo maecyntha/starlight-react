@@ -6,10 +6,19 @@ import hotel1 from '../pict/hotel01.jfif';
 import hotel2 from '../pict/hotel02.jfif';
 import hotel3 from '../pict/hotel03.jfif';
 
+function Hotel(props) {
+    <Box overflow='hidden' h='100%' w='100%'>
+        <Image w='100%' src={props.hotel} alt=""/>
+    </Box>
+} 
+
 function Heading() {
     return (
         <Box>
             <Flex justifyContent='center'>
+                {/* <Hotel hotel={hotel1}/>
+                <Hotel hotel={hotel2}/>
+                <Hotel hotel={hotel3}/> */}
                 <Box overflow='hidden' h='100%' w='100%'>
                     <Image w='100%' src={hotel1} alt=""/>
                 </Box>
@@ -21,6 +30,7 @@ function Heading() {
                 </Box>
             </Flex>
             <Header />
+
             <Flex p={8} flexDir={{base:'column', md:'row'}}>
                 <LeftCard />
                 <RightCard />
