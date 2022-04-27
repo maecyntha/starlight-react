@@ -17,8 +17,7 @@ function RightTemp(props) {
                         src={props.img} alt="" 
                         rounded='full' 
                         mr={5}
-                        width='15%'
-                        height='100%'
+                        width={{base: '15%', md: '20%'}}
                     />
                     <Flex ml={5} flexDir='column' justifyContent='center'>
                         <Text mb={1} fontWeight='bold' color='brand.400'>{props.name}</Text>

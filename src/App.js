@@ -1,8 +1,8 @@
 import React from "react";
-import Content from './components/test'
+import Content from './components/content'
 import Top from './components/top'
 
-function FlexboxPage () {
+function App () {
 	return (
 		<>
 			<Top />
@@ -11,4 +11,4 @@ function FlexboxPage () {
 	);
 }
 
-export default FlexboxPage;
+export default App;

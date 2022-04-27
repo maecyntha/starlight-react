@@ -29,8 +29,7 @@ function SideNav() {
             <Nav name="Car Rentals" />
             <Nav name="Tool" />
 
-            <Text display={{base:'none', md:'block'}} color="brand.100" fontSize="xs" w="full" mt='auto' textAlign="center">&copy;2022 by<br />Maecyntha Irelynn Tantra</Text>
-            <Text display={{base:'none', md:'block'}} color="brand.100" fontSize="xs" w="full" mb={5} textAlign="center">All Rights Reserved</Text>
+            <Text display={{base:'none', md:'block'}} color="brand.100" fontSize="xs" w="full" mt='auto' mb={5} textAlign="center">&copy;2022 by<Text />Maecyntha Irelynn Tantra<Text />All Rights Reserved</Text>
         </Flex>
     )
 }

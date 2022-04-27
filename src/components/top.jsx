@@ -5,6 +5,20 @@ import duck from '../pict/duck.jpg';
 import car from '../pict/car.svg';
 import ig from '../pict/ig.svg';
 
+function Icon(props) {
+    return (
+        <Box width='50px' mr={{ base: '0', md: '5' }} >
+            <Image 
+                src={props.logo} alt=''
+                cursor='pointer'
+                borderRadius={3}
+                _hover={{ backgroundColor: 'brand.200'}}
+                p={3}
+            />
+        </Box>
+    );
+}
+
 function Account() {
     return (
         <Flex 
@@ -27,44 +41,12 @@ function Account() {
     )
 }
 
-// function Icon(props) {
-//     return (
-//         <Box width='50px' mr={{ base: '0', md: '5' }} >
-//                 <Image 
-//                     src={props.logo} alt=''
-//                     cursor='pointer'
-//                     borderRadius={3}
-//                     _hover={{ backgroundColor: 'brand.200'}}
-//                     p={3}
-//                 />
-//             </Box>
-//     );
-// }
-
 function Other() {
     return (
         <Flex alignItems='center'>
-            <Box width='50px' mr={{ base: '0', md: '5' }} >
-                <Image 
-                    src={car} alt=''
-                    cursor='pointer'
-                    borderRadius={3}
-                    _hover={{ backgroundColor: 'brand.200'}}
-                    p={3}
-                />
-            </Box>
+            <Icon logo={car} />
+            <Icon logo={ig} />
 
-            {/* <Icon img="{car}" /> */}
-
-            <Box width='50px' mr={{ base: '0', md: '5' }} >
-                <Image 
-                    src={ig} alt=''
-                    cursor='pointer'
-                    borderRadius={4}
-                    _hover={{ backgroundColor: 'brand.200'}}
-                    p={3}
-                />
-            </Box>
             <Account />
         </Flex>
     )

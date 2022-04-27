@@ -6,7 +6,7 @@ function Pict(props) {
             src={props.url} 
             rounded='full' 
             mr={1}
-            maxH={{base:'40px', md:'25px'}}
+            maxH={{base:'30px', md:'25px'}}
         >
         </Image>
     )
